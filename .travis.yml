@@ -1,7 +1,7 @@
 language: python
 python:
   - "3.6.3"
-before_install:
-  - sudo apt install gcc libsdl2-dev libffi-dev python-dev
+before_install:  
+  - sudo apt install gcc libgles2-mesa-dev-lts-utopic libegl1-mesa-dev-lts-utopic libsdl2-dev libffi-dev python-dev
 script:
   - ./run_tests.sh
