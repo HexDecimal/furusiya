@@ -3,13 +3,13 @@ python:
   - "3.6.3"
 before_install:  
   # Necessary to install libsdl2-dev ...
-  sudo add-apt-repository main
-  sudo add-apt-repository universe
-  sudo add-apt-repository restricted
-  sudo add-apt-repository multiverse
-  sudo apt update
-  sudo apt upgrade
-  sudo apt -f install
+  - sudo add-apt-repository main
+  - sudo add-apt-repository universe
+  - sudo add-apt-repository restricted
+  - sudo add-apt-repository multiverse
+  - sudo apt update
+  - sudo apt upgrade
+  - sudo apt -f install
   
   # Core requirements
   - sudo apt install gcc libsdl2-dev libffi-dev python-dev
