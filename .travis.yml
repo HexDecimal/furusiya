@@ -2,6 +2,6 @@ language: python
 python:
   - "3.6.3"
 before_install:
-  - sudo apt-get install libsdl2-dev, python3-sdl2
+  - sudo apt install gcc libsdl2-dev libffi-dev python-dev libomp-dev
 script:
   - ./run_tests.sh
