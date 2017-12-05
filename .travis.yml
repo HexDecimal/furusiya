@@ -3,7 +3,7 @@ python:
   - "3.6.3"
 before_install:  
   # Necessary to install libsdl2-dev ...
-  - aptitude install libgl1-mesa-dri:i386
+  - sudo aptitude install libgl1-mesa-dri:i386
   
   # Core requirements
   - sudo apt install gcc libsdl2-dev libffi-dev python-dev
