@@ -1,6 +1,7 @@
 language: python
 python:
   - "3.6.3"
+before_install:
+  - sudo apt-get install libsdl2-dev, python3-sdl2
 script:
-  sudo apt-get install libsdl2-dev, python3-sdl2
-  ./run_tests.sh
+  - ./run_tests.sh
