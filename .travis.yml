@@ -1,10 +1,5 @@
 language: python
 python:
   - "3.6.3"
-before_install:
-  # https://github.com/HexDecimal/python-tdl#linux
-  - sudo add-apt-repository ppa:4b796c65/ppa --yes
-  - sudo apt-get update
-  - sudo apt-get install python-tdl python3-tdl
 script:
   - ./run_tests.sh
