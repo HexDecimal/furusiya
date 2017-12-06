@@ -2,10 +2,6 @@ language: python
 python:
   - "3.6.3"
 before_install:  
-  # Necessary to install libsdl2-dev ...
-  - sudo aptitude install -y libgl1-mesa-dri:i386
-  
-  # Core requirements
-  - sudo apt install gcc libsdl2-dev libffi-dev python-dev
+  - sudo apt install gcc libffi-dev python-dev #libsdl2-dev
 script:
   - ./run_tests.sh
